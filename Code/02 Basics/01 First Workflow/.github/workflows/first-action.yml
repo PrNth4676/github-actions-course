@@ -1,8 +1,8 @@
 name: First Workflow
-on: workflow_dispatch
-jobs:
-  first-job:
-    runs-on: ubuntu-latest
+on: workflow_dispatch # Keyword that controls when the workflow will run
+jobs: # A workflow is made up of one or more jobs that can run sequentially or in parallel
+  first-job: #Name of the first job in jobs bracket
+    runs-on: ubuntu-latest # The type of runner that the job will run on. 
     steps:
       - name: Print greeting
         run: echo "Hello World!"
